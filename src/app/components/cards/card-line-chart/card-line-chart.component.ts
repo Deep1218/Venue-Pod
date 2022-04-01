@@ -33,8 +33,10 @@ export class CardLineChartComponent implements OnInit {
           {
             label: new Date().getFullYear() - 1,
             fill: false,
-            backgroundColor: "#fff",
-            borderColor: "#fff",
+            // backgroundColor: "#fff",
+            backgroundColor: "black",
+            // borderColor: "#fff",
+            borderColor: "black",
             data: [40, 68, 86, 74, 56, 60, 87],
           },
         ],
@@ -49,7 +51,8 @@ export class CardLineChartComponent implements OnInit {
         },
         legend: {
           labels: {
-            fontColor: "white",
+            // fontColor: "white",
+            fontColor: "black",
           },
           align: "end",
           position: "bottom",
@@ -66,7 +69,8 @@ export class CardLineChartComponent implements OnInit {
           xAxes: [
             {
               ticks: {
-                fontColor: "rgba(255,255,255,.7)",
+                // fontColor: "rgba(255,255,255,.7)",
+                fontColor: "black",
               },
               display: true,
               scaleLabel: {
@@ -79,7 +83,8 @@ export class CardLineChartComponent implements OnInit {
                 borderDash: [2],
                 borderDashOffset: [2],
                 color: "rgba(33, 37, 41, 0.3)",
-                zeroLineColor: "rgba(0, 0, 0, 0)",
+                // zeroLineColor: "rgba(0, 0, 0, 0)",
+                zeroLineColor: "black",
                 zeroLineBorderDash: [2],
                 zeroLineBorderDashOffset: [2],
               },
@@ -88,13 +93,15 @@ export class CardLineChartComponent implements OnInit {
           yAxes: [
             {
               ticks: {
-                fontColor: "rgba(255,255,255,.7)",
+                // fontColor: "rgba(255,255,255,.7)",
+                fontColor: "black",
               },
               display: true,
               scaleLabel: {
                 display: false,
                 labelString: "Value",
-                fontColor: "white",
+                // fontColor: "white",
+                fontColor: "black",
               },
               gridLines: {
                 borderDash: [3],

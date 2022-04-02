@@ -10,7 +10,11 @@ import { DashboardComponent } from "./views/admin/dashboard/dashboard.component"
 import { MapsComponent } from "./views/admin/maps/maps.component";
 import { SettingsComponent } from "./views/admin/settings/settings.component";
 import { TablesComponent } from "./views/admin/tables/tables.component";
+<<<<<<< HEAD
 import { UserTableComponent } from "./views/admin/user-table/user-table.component";
+=======
+import { ForgotPasswordComponent } from "./views/auth/forgot-password/forgot-password.component";
+>>>>>>> bc57f2f612f2b760ad5676f8d6d40402f9762781
 
 // auth views
 import { LoginComponent } from "./views/auth/login/login.component";
@@ -42,6 +46,7 @@ const routes: Routes = [
     children: [
       { path: "login", component: LoginComponent },
       { path: "register", component: RegisterComponent },
+      { path: "forgot-password", component: ForgotPasswordComponent },
       { path: "", redirectTo: "login", pathMatch: "full" },
     ],
   },

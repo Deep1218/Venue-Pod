@@ -48,7 +48,7 @@ import { NotificationDropdownComponent } from "./components/dropdowns/notificati
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user-dropdown.component";
 import { UserTableComponent } from './views/admin/user-table/user-table.component';
-
+import { ForgotPasswordComponent } from './views/auth/forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
@@ -87,6 +87,7 @@ import { UserTableComponent } from './views/admin/user-table/user-table.componen
     LandingComponent,
     ProfileComponent,
     UserTableComponent,
+    ForgotPasswordComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

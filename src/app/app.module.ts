@@ -48,6 +48,7 @@ import { NotificationDropdownComponent } from "./components/dropdowns/notificati
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user-dropdown.component";
 import { UserTableComponent } from './views/admin/user-table/user-table.component';
+import { ActiveLocationsComponent } from './views/admin/active-locations/active-locations.component';
 
 
 @NgModule({
@@ -87,6 +88,7 @@ import { UserTableComponent } from './views/admin/user-table/user-table.componen
     LandingComponent,
     ProfileComponent,
     UserTableComponent,
+    ActiveLocationsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

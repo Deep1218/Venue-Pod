@@ -48,12 +48,9 @@ import { NotificationDropdownComponent } from "./components/dropdowns/notificati
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user-dropdown.component";
 import { UserTableComponent } from './views/admin/user-table/user-table.component';
-<<<<<<< HEAD
 import { ForgotPasswordComponent } from './views/auth/forgot-password/forgot-password.component';
-=======
 import { ActiveLocationsComponent } from './views/admin/active-locations/active-locations.component';
 
->>>>>>> activeLocationsBranch
 
 @NgModule({
   declarations: [
@@ -92,11 +89,9 @@ import { ActiveLocationsComponent } from './views/admin/active-locations/active-
     LandingComponent,
     ProfileComponent,
     UserTableComponent,
-<<<<<<< HEAD
     ForgotPasswordComponent,
-=======
     ActiveLocationsComponent,
->>>>>>> activeLocationsBranch
+
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

@@ -1,62 +1,53 @@
+
 <div class="container mx-auto px-4 h-full">
   <div class="flex content-center items-center justify-center h-full">
-    <div class="w-full lg:w-4/12 px-4">
-      <div
-        class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200 border-0"
-      >
-        <div class="rounded-t mb-0 px-6 py-6">
-          <div class="text-center mb-3">
-            <h6 class="text-blueGray-500 text-sm font-bold">Sign in with</h6>
-          </div>
-          <div class="btn-wrapper text-center">
-            <button
-              class="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
-              type="button"
-            >
-              <img alt="..." class="w-5 mr-1" src="assets/img/github.svg" />
-              Github
-            </button>
-            <button
-              class="bg-white active:bg-blueGray-50 text-blueGray-700 font-normal px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 uppercase shadow hover:shadow-md inline-flex items-center font-bold text-xs ease-linear transition-all duration-150"
-              type="button"
-            >
-              <img alt="..." class="w-5 mr-1" src="assets/img/google.svg" />
-              Google
-            </button>
-          </div>
-          <hr class="mt-6 border-b-1 border-blueGray-300" />
-        </div>
-        <div class="flex-auto px-4 lg:px-10 py-10 pt-0">
-          <div class="text-blueGray-400 text-center mb-3 font-bold">
-            <small>Or sign in with credentials</small>
-          </div>
+
+    <div class="w-full lg:w-4/12 ">
+      
+        <div class="flex-auto px-4 lg:px-10 py-10 pt-4">
           <form>
             <div class="relative w-full mb-3">
               <label
-                class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                class="block text-blueGray-800 text-xs font-bold mb-2"
                 htmlFor="grid-password"
               >
-                Email
+                Email:
               </label>
+              <div class="relative flex w-full flex-wrap items-stretch mb-3">
+                <span class="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+                  <i class="fas fa-envelope"></i>
+                </span>
               <input
                 type="email"
-                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 relative bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 pl-10"
                 placeholder="Email"
               />
+                
+              </div>
+              
             </div>
 
             <div class="relative w-full mb-3">
               <label
-                class="block uppercase text-blueGray-600 text-xs font-bold mb-2"
+                class="block text-blueGray-800 text-xs font-bold mb-2"
                 htmlFor="grid-password"
               >
-                Password
+                Password:
               </label>
+              <div class="relative flex w-full flex-wrap items-stretch mb-3">
+                <span class="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+                  <i class="fas fa-lock"></i>
+                </span>
               <input
                 type="password"
-                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 relative bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 pl-10"
                 placeholder="Password"
               />
+              <a href="javascript:void(0)" class="text-blueGray-800 font-bold">
+                <small>Forgot password?</small>
+              </a>
+              </div>
+              
             </div>
             <div>
               <label class="inline-flex items-center cursor-pointer">
@@ -72,28 +63,27 @@
             </div>
 
             <div class="text-center mt-6">
-              <button
-                class="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
-                type="button"
-              >
-                Sign In
-              </button>
+              <div class="flex justify-between align-center">
+                <!-- <button class="text-red-500 background-transparent font-bold uppercase px-6 py-2 text-sm outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                  <i class="fas fa-heart"></i> With Icon and Text
+                </button> -->
+                <div class="text-blueGray-800 font-bold mt-2 uppercase">
+                  <a [routerLink]="['/auth/register']" class="text-blueGray-800">
+                    <small>Create new account <i class="fas fa-arrow-right"></i></small>
+                  </a>
+                </div>
+                <button
+                  class="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                  type="button"
+                >
+                  Sign In
+                </button>
+              </div>
             </div>
           </form>
         </div>
-      </div>
-      <div class="flex flex-wrap mt-6 relative">
-        <div class="w-1/2">
-          <a href="javascript:void(0)" class="text-blueGray-200">
-            <small>Forgot password?</small>
-          </a>
-        </div>
-        <div class="w-1/2 text-right">
-          <a [routerLink]="['/auth/register']" class="text-blueGray-200">
-            <small>Create new account</small>
-          </a>
-        </div>
-      </div>
     </div>
-  </div>
+      
+    </div>
 </div>
+

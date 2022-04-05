@@ -4,12 +4,15 @@ import { Routes, RouterModule } from "@angular/router";
 // layouts
 import { AdminComponent } from "./layouts/admin/admin.component";
 import { AuthComponent } from "./layouts/auth/auth.component";
+import { ActiveLocationsComponent } from "./views/admin/active-locations/active-locations.component";
 
 // admin views
 import { DashboardComponent } from "./views/admin/dashboard/dashboard.component";
 import { MapsComponent } from "./views/admin/maps/maps.component";
 import { SettingsComponent } from "./views/admin/settings/settings.component";
 import { TablesComponent } from "./views/admin/tables/tables.component";
+import { UserTableComponent } from "./views/admin/user-table/user-table.component";
+import { ForgotPasswordComponent } from "./views/auth/forgot-password/forgot-password.component";
 
 // auth views
 import { LoginComponent } from "./views/auth/login/login.component";
@@ -29,6 +32,8 @@ const routes: Routes = [
       { path: "dashboard", component: DashboardComponent },
       { path: "settings", component: SettingsComponent },
       { path: "tables", component: TablesComponent },
+      { path: "user-table", component: UserTableComponent },
+      { path: "active-locations", component: ActiveLocationsComponent},
       { path: "maps", component: MapsComponent },
       { path: "", redirectTo: "dashboard", pathMatch: "full" },
     ],
@@ -40,6 +45,7 @@ const routes: Routes = [
     children: [
       { path: "login", component: LoginComponent },
       { path: "register", component: RegisterComponent },
+      { path: "forgot-password", component: ForgotPasswordComponent },
       { path: "", redirectTo: "login", pathMatch: "full" },
     ],
   },

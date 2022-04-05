@@ -48,6 +48,9 @@ import { NotificationDropdownComponent } from "./components/dropdowns/notificati
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user-dropdown.component";
 import { CardEmptyComponent } from './components/cards/card-empty/card-empty.component';
+import { UserTableComponent } from './views/admin/user-table/user-table.component';
+import { ForgotPasswordComponent } from './views/auth/forgot-password/forgot-password.component';
+import { ActiveLocationsComponent } from './views/admin/active-locations/active-locations.component';
 
 @NgModule({
   declarations: [
@@ -86,6 +89,9 @@ import { CardEmptyComponent } from './components/cards/card-empty/card-empty.com
     LandingComponent,
     ProfileComponent,
     CardEmptyComponent,
+    UserTableComponent,
+    ForgotPasswordComponent,
+    ActiveLocationsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

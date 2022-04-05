@@ -1,0 +1,425 @@
+<app-auth-navbar></app-auth-navbar>
+<main class="profile-page">
+  <section class="relative block h-500-px">
+    <div
+      class="absolute top-0 w-full h-full bg-center bg-cover"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80');
+      "
+    >
+      <span
+        id="blackOverlay"
+        class="w-full h-full absolute opacity-50 bg-black"
+      ></span>
+    </div>
+    <div
+      class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
+      style="transform: translateZ(0)"
+    >
+      <svg
+        class="absolute bottom-0 overflow-hidden"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        version="1.1"
+        viewBox="0 0 2560 100"
+        x="0"
+        y="0"
+      >
+        <polygon
+          class="text-blueGray-200 fill-current"
+          points="2560 0 2560 100 0 100"
+        ></polygon>
+      </svg>
+    </div>
+  </section>
+  <section class="relative py-16 bg-blueGray-200">
+    <div class="container mx-auto px-4">
+      <div
+        class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64"
+      >
+        <div class="px-6">
+          <div class="flex flex-wrap">
+            <div class="w-full px-4 lg:order-1">
+              <div class="flex py-4 lg:pt-4 pt-8">
+                <div class="mr-4 p-3">
+                  <h2 class="text-4xl font-bold block leading-normal">Venue Registration :-</h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="py-10 bg-blueGray-200 rounded-lg">
+            <div class="flex flex-wrap justify-center">
+              <div class="w-full lg:w-9/12 px-4">
+                <form>
+                  <h6 class="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
+                    Buessiness Information
+                  </h6>
+                  <div class="flex flex-wrap">
+                    <!-- Category -->
+                    <div class="w-full lg:w-6/12 px-4">
+                      <div class="relative w-full mb-3">
+                          <label
+                            class="block text-blueGray-600 text-xs font-bold mb-2"
+                            htmlFor="grid-password"
+                          >
+                            Category:
+                          </label>
+                          <div class="relative flex w-full flex-wrap items-stretch mb-3">
+                            <span class="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+                              <i class="fas fa-list"></i>
+                            </span>
+                            <select class="form-select border-0 px-3 py-3 text-blueGray-600 relative bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 pl-10">
+                              <option value="plot">Party Plots</option>
+                              <option value="">Banquets</option>
+                            </select>
+                          </div>
+                      </div>
+                    </div>
+                    <!-- Name -->
+                    <div class="w-full lg:w-6/12 px-4">
+                      <div class="relative w-full mb-3">
+                          <label
+                            class="block text-blueGray-600 text-xs font-bold mb-2"
+                            htmlFor="grid-password"
+                          >
+                            Venue Name:
+                          </label>
+                          <div class="relative flex w-full flex-wrap items-stretch mb-3">
+                            <span class="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+                              <i class="fas fa-building"></i>
+                            </span>
+                            <input
+                              type="text"
+                              class="border-0 px-3 py-3 text-blueGray-600 relative bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 pl-10"
+                              value="Sindhu Bhavan Party Plot"
+                            />
+                          </div>
+                      </div>
+                    </div>
+                    <!-- Email -->
+                    <div class="w-full lg:w-4/12 px-4">
+                      <div class="relative w-full mb-3">
+                          <label
+                            class="block text-blueGray-600 text-xs font-bold mb-2"
+                            htmlFor="grid-password"
+                          >
+                            Business Email:
+                          </label>
+                          <div class="relative flex w-full flex-wrap items-stretch mb-3">
+                            <span class="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+                              <i class="fas fa-envelope"></i>
+                            </span>
+                            <input
+                              type="email"
+                              class="border-0 px-3 py-3 text-blueGray-600 relative bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 pl-10"
+                              value="exapmple@domiain.com"
+                            />
+                          </div>
+                      </div>
+                    </div>
+                    <!-- Number -->
+                    <div class="w-full lg:w-8/12 px-4">
+                      <div class="relative w-full mb-3">
+                          <label
+                            class="block text-blueGray-600 text-xs font-bold mb-2"
+                            htmlFor="grid-password"
+                          >
+                            Business Number:
+                          </label>
+                          <div class="flex flex-wrap">
+                            <div class="w-4/12">
+                              <div class="relative flex w-full flex-wrap items-stretch mb-3">
+                                <span class="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+                                  <i class="fas fa-flag"></i>
+                                </span>
+                                <select class="form-select border-0 px-3 py-3 text-blueGray-600 relative bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 pl-10 pr-8">
+                                  <option value="">+91</option>
+                                  <option value="">+21</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="w-full flex-1 ml-3">
+                              <div class="relative flex w-full flex-wrap items-stretch mb-3">
+                                <span class="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+                                  <i class="fas fa-phone"></i>
+                                </span>
+                                <input
+                                  type="number"
+                                  class="border-0 px-3 py-3 text-blueGray-600 relative bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 pl-10"
+                                  value="1234536789"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <!-- Address -->
+                    <div class="w-full lg:w-12/12 px-4">
+                      <div class="relative w-full mb-3">
+                        <label
+                          class="block text-blueGray-600 text-xs font-bold mb-2"
+                          htmlFor="grid-password"
+                        >
+                          Address:
+                        </label>
+                        <div class="relative flex w-full flex-wrap items-stretch mb-3">
+                          <span class="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+                            <i class="fas fa-address-book"></i>
+                          </span>
+                          <input
+                            type="text"
+                            class="border-0 px-3 py-3 text-blueGray-600 relative bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 pl-10"
+                            value="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                     <!-- Pin code -->
+                     <div class="w-full lg:w-6/12 px-4">
+                      <div class="relative w-full mb-3">
+                        <label
+                          class="block text-blueGray-600 text-xs font-bold mb-2"
+                          htmlFor="grid-password"
+                        >
+                          Pin Code:
+                        </label>
+                        <div class="relative flex w-full flex-wrap items-stretch mb-3">
+                          <span class="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+                            <i class="fas fa-map-pin"></i>
+                          </span>
+                          <input
+                            type="number"
+                            class="border-0 px-3 py-3 text-blueGray-600 relative bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 pl-10"
+                            value="390007"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- City -->
+                    <div class="w-full lg:w-6/12 px-4">
+                      <div class="relative w-full mb-3">
+                        <label
+                          class="block text-blueGray-600 text-xs font-bold mb-2"
+                          htmlFor="grid-password"
+                        >
+                          City:
+                        </label>
+                        <div class="relative flex w-full flex-wrap items-stretch mb-3">
+                          <span class="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+                            <i class="fas fa-city"></i>
+                          </span>
+                          <input
+                            type="text"
+                            class="border-0 px-3 py-3 text-blueGray-600 relative bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 pl-10"
+                            value="Vadodara"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- State -->
+                    <div class="w-full lg:w-6/12 px-4">
+                      <div class="relative w-full mb-3">
+                        <label
+                          class="block text-blueGray-600 text-xs font-bold mb-2"
+                          htmlFor="grid-password"
+                        >
+                          State:
+                        </label>
+                        <div class="relative flex w-full flex-wrap items-stretch mb-3">
+                          <span class="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+                            <i class="fas fa-dove"></i>
+                          </span>
+                          <input
+                            type="text"
+                            class="border-0 px-3 py-3 text-blueGray-600 relative bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 pl-10"
+                            value="Gujarat"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Country -->
+                    <div class="w-full lg:w-6/12 px-4">
+                      <div class="relative w-full mb-3">
+                        <label
+                          class="block text-blueGray-600 text-xs font-bold mb-2"
+                          htmlFor="grid-password"
+                        >
+                          Country:
+                        </label>
+                        <div class="relative flex w-full flex-wrap items-stretch mb-3">
+                          <span class="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+                            <i class="fas fa-flag"></i>
+                          </span>
+                          <input
+                            type="text"
+                            class="border-0 px-3 py-3 text-blueGray-600 relative bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 pl-10"
+                            value="India"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-full lg:w-4/12 px-4">
+                      <div class="relative w-full">
+                        <label
+                          class="block text-blueGray-600 text-xs font-bold mb-2"
+                          htmlFor="grid-password"
+                        >
+                          Food Category:
+                        </label>
+                      </div>
+                      <div class="flex flex-wrap mt-5">
+                        <div class="px-3">
+                          <label class="inline-flex items-center cursor-pointer">
+                            <input
+                              id="customCheckLogin"
+                              type="checkbox"
+                              class="form-checkbox border-0 text-blueGray-700 ml-1 w-5 h-5 ease-linear transition-all duration-150 rounded"
+                            />
+                            <span class="ml-2 text-sm font-semibold text-blueGray-600">
+                              Veg.
+                            </span>
+                          </label>
+                        </div>
+                        <div class="px-3">
+                          <label class="inline-flex items-center cursor-pointer">
+                            <input
+                              id="customCheckLogin"
+                              type="checkbox"
+                              class="form-checkbox border-0 text-blueGray-700 ml-1 w-5 h-5 ease-linear transition-all duration-150 rounded"
+                            />
+                            <span class="ml-2 text-sm font-semibold text-blueGray-600">
+                              Non-Veg.
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-full lg:w-4/12 px-4">
+                      <label
+                        class="block text-blueGray-600 text-xs font-bold mb-2"
+                        htmlFor="grid-password"
+                      >
+                        Rate Per Day:
+                      </label>
+                      <div class="relative flex w-full flex-wrap items-stretch mb-3">
+                        <span class="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+                          <i class="fas fa-rupee-sign"></i>
+                        </span>
+                        <input
+                          type="number"
+                          class="border-0 px-3 py-3 text-blueGray-600 relative bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 pl-10"
+                          value="1000"
+                        />
+                      </div>
+                    </div>
+                    <div class="w-full lg:w-4/12 px-4">
+                      <label
+                        class="block text-blueGray-600 text-xs font-bold mb-2"
+                        htmlFor="grid-password"
+                      >
+                        Rate Per Plate:
+                      </label>
+                      <div class="relative flex w-full flex-wrap items-stretch mb-3">
+                        <span class="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+                          <i class="fas fa-rupee-sign"></i>
+                        </span>
+                        <input
+                          type="number"
+                          class="border-0 px-3 py-3 text-blueGray-600 relative bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 pl-10"
+                          value="100"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap">
+                    <div class="w-full lg:w-12/12 px-4">
+                      <div class="relative w-full mb-3">
+                        <label
+                          class="block text-blueGray-600 text-xs font-bold mb-2"
+                          htmlFor="grid-password"
+                        >
+                          Description:
+                        </label>
+                        <textarea
+                          type="text"
+                          class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150"
+                          rows="4"
+                        >Add your description here.</textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Aadhar Card -->
+                  <div class="flex flex-wrap">
+                    <div class="w-full lg:w-4/12 px-4">
+                      <div class="relative w-full mb-3">
+                        <label
+                          class="block text-blueGray-600 text-xs font-bold mb-2"
+                          htmlFor="grid-password"
+                        >
+                          Upload Aadhar Card:
+                        </label>
+                        <div class="relative flex w-full flex-wrap items-stretch mb-3">
+                          <span class="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+                            <i class="fas fa-upload"></i>
+                          </span>
+                          <input
+                            type="file"
+                            class="border-0 px-3 py-3 text-blueGray-600 relative bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 pl-10"
+                            multiple
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Pan Card -->
+                    <div class="w-full lg:w-4/12 px-4">
+                      <div class="relative w-full mb-3">
+                        <label
+                          class="block text-blueGray-600 text-xs font-bold mb-2"
+                          htmlFor="grid-password"
+                        >
+                          Upload PAN Card:
+                        </label>
+                        <div class="relative flex w-full flex-wrap items-stretch mb-3">
+                          <span class="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+                            <i class="fas fa-upload"></i>
+                          </span>
+                          <input
+                            type="file"
+                            class="border-0 px-3 py-3 text-blueGray-600 relative bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 pl-10"
+                            multiple
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Latest Bill -->
+                    <div class="w-full lg:w-4/12 px-4">
+                      <div class="relative w-full mb-3">
+                        <label
+                          class="block text-blueGray-600 text-xs font-bold mb-2"
+                          htmlFor="grid-password"
+                        >
+                          Upload Latest Bill:
+                        </label>
+                        <div class="relative flex w-full flex-wrap items-stretch mb-3">
+                          <span class="z-10 h-full leading-snug font-normal absolute text-center text-blueGray-300 absolute bg-transparent rounded text-base items-center justify-center w-8 pl-3 py-3">
+                            <i class="fas fa-upload"></i>
+                          </span>
+                          <input
+                            type="file"
+                            class="border-0 px-3 py-3 text-blueGray-600 relative bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150 pl-10"
+                            multiple
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<app-footer></app-footer>

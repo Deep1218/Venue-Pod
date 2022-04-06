@@ -48,6 +48,7 @@ import { NotificationDropdownComponent } from "./components/dropdowns/notificati
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user-dropdown.component";
 import { ForgotPasswordComponent } from './views/auth/forgot-password/forgot-password.component';
+import { VenueListComponent } from './views/user/venue-list/venue-list.component';
 
 @NgModule({
   declarations: [
@@ -86,6 +87,7 @@ import { ForgotPasswordComponent } from './views/auth/forgot-password/forgot-pas
     LandingComponent,
     ProfileComponent,
     ForgotPasswordComponent,
+    VenueListComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

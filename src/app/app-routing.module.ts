@@ -15,7 +15,7 @@ import { ForgotPasswordComponent } from "./views/auth/forgot-password/forgot-pas
 // auth views
 import { LoginComponent } from "./views/auth/login/login.component";
 import { RegisterComponent } from "./views/auth/register/register.component";
-
+import { VenueListComponent } from "./views/user/venue-list/venue-list.component";
 // no layouts views
 import { IndexComponent } from "./views/index/index.component";
 import { LandingComponent } from "./views/landing/landing.component";
@@ -48,6 +48,7 @@ const routes: Routes = [
   // no layout views
   { path: "profile", component: ProfileComponent },
   { path: "landing", component: LandingComponent },
+  { path: "venue-list", component: VenueListComponent },
   { path: "", component: IndexComponent },
   { path: "**", redirectTo: "", pathMatch: "full" },
 ];

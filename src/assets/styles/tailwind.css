@@ -1,6 +1,6 @@
 /*! tailwindcss v2.0.4 | MIT License | https://tailwindcss.com */
 
-/*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
 /*
 Document
@@ -12,8 +12,8 @@ Use a better box model (opinionated).
 */
 
 *,
-*::before,
-*::after {
+::before,
+::after {
   box-sizing: border-box;
 }
 
@@ -21,7 +21,7 @@ Use a better box model (opinionated).
 Use a more readable tab size (opinionated).
 */
 
-:root {
+html {
   -moz-tab-size: 4;
   -o-tab-size: 4;
      tab-size: 4;
@@ -1412,6 +1412,11 @@ select {
   background-color: rgba(71, 85, 105, var(--tw-bg-opacity));
 }
 
+.active\:bg-blueGray-800:active {
+  --tw-bg-opacity: 1;
+  background-color: rgba(30, 41, 59, var(--tw-bg-opacity));
+}
+
 .bg-center {
   background-position: center;
 }
@@ -2759,6 +2764,10 @@ select {
   padding-left: 0.75rem;
 }
 
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .pr-4 {
   padding-right: 1rem;
 }
@@ -2874,6 +2883,7 @@ select {
 }
 
 .sticky {
+  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -3151,6 +3161,11 @@ select {
   color: rgba(56, 189, 248, var(--tw-text-opacity));
 }
 
+.text-lightBlue-500 {
+  --tw-text-opacity: 1;
+  color: rgba(14, 165, 233, var(--tw-text-opacity));
+}
+
 .text-lightBlue-600 {
   --tw-text-opacity: 1;
   color: rgba(2, 132, 199, var(--tw-text-opacity));
@@ -3319,6 +3334,10 @@ select {
 
 .no-underline {
   text-decoration: none;
+}
+
+.hover\:underline:hover {
+  text-decoration: underline;
 }
 
 .antialiased {
@@ -3495,6 +3514,10 @@ select {
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-4\/12 {
+  width: 33.333333%;
 }
 
 .w-6\/12 {

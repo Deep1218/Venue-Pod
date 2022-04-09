@@ -51,6 +51,7 @@ import { CardEmptyComponent } from './components/cards/card-empty/card-empty.com
 import { UserTableComponent } from './views/admin/user-table/user-table.component';
 import { ForgotPasswordComponent } from './views/auth/forgot-password/forgot-password.component';
 import { ActiveLocationsComponent } from './views/admin/active-locations/active-locations.component';
+import { BookedVenuesComponent } from './views/booked-venues/booked-venues.component';
 
 @NgModule({
   declarations: [
@@ -92,6 +93,7 @@ import { ActiveLocationsComponent } from './views/admin/active-locations/active-
     UserTableComponent,
     ForgotPasswordComponent,
     ActiveLocationsComponent,
+    BookedVenuesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

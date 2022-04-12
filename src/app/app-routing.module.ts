@@ -20,9 +20,12 @@ import { RegisterComponent } from "./views/auth/register/register.component";
 
 // no layouts views
 import { IndexComponent } from "./views/index/index.component";
-import { LandingComponent } from "./views/landing/landing.component";
+// import { LandingComponent } from "./views/landing/landing.component";
 import { ProfileComponent } from "./views/profile/profile.component";
 import { ChatboxComponent } from "./views/chatbox/chatbox.component";
+
+// venue-item views
+import{VenueItemComponent} from "./views/venue-item/venue-item.component";
 
 const routes: Routes = [
   // admin views
@@ -52,8 +55,9 @@ const routes: Routes = [
   },
   // no layout views
   { path: "profile", component: ProfileComponent },
-  { path: "landing", component: LandingComponent },
+  // { path: "landing", component: LandingComponent },
   { path: "chatbox", component: ChatboxComponent},
+  {path:'venue-item',component: VenueItemComponent},
   { path: "", component: IndexComponent },
   { path: "**", redirectTo: "", pathMatch: "full" },
 ];

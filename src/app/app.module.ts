@@ -20,7 +20,6 @@ import { RegisterComponent } from "./views/auth/register/register.component";
 
 // no layouts views
 import { IndexComponent } from "./views/index/index.component";
-import { LandingComponent } from "./views/landing/landing.component";
 import { ProfileComponent } from "./views/profile/profile.component";
 
 // components for views and layouts
@@ -52,6 +51,7 @@ import { UserTableComponent } from './views/admin/user-table/user-table.componen
 import { ForgotPasswordComponent } from './views/auth/forgot-password/forgot-password.component';
 import { ActiveLocationsComponent } from './views/admin/active-locations/active-locations.component';
 import { ChatboxComponent } from './views/chatbox/chatbox.component';
+import { VenueItemComponent } from "./views/venue-item/venue-item.component";
 
 @NgModule({
   declarations: [
@@ -87,13 +87,13 @@ import { ChatboxComponent } from './views/chatbox/chatbox.component';
     LoginComponent,
     RegisterComponent,
     IndexComponent,
-    LandingComponent,
     ProfileComponent,
     CardEmptyComponent,
     UserTableComponent,
     ForgotPasswordComponent,
     ActiveLocationsComponent,
     ChatboxComponent,
+    VenueItemComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

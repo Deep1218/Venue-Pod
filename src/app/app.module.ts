@@ -50,8 +50,12 @@ import { CardEmptyComponent } from './components/cards/card-empty/card-empty.com
 import { UserTableComponent } from './views/admin/user-table/user-table.component';
 import { ForgotPasswordComponent } from './views/auth/forgot-password/forgot-password.component';
 import { ActiveLocationsComponent } from './views/admin/active-locations/active-locations.component';
+
 import { ChatboxComponent } from './views/chatbox/chatbox.component';
 import { VenueItemComponent } from "./views/venue-item/venue-item.component";
+
+import { BookedVenuesComponent } from './views/booked-venues/booked-venues.component';
+
 
 @NgModule({
   declarations: [
@@ -92,8 +96,12 @@ import { VenueItemComponent } from "./views/venue-item/venue-item.component";
     UserTableComponent,
     ForgotPasswordComponent,
     ActiveLocationsComponent,
+
     ChatboxComponent,
-    VenueItemComponent
+    VenueItemComponent,
+
+    BookedVenuesComponent,
+
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

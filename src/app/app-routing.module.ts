@@ -17,6 +17,7 @@ import { ForgotPasswordComponent } from "./views/auth/forgot-password/forgot-pas
 // auth views
 import { LoginComponent } from "./views/auth/login/login.component";
 import { RegisterComponent } from "./views/auth/register/register.component";
+import { WebsiteSettingsComponent } from "./views/admin/website-settings/website-settings.component";
 
 // no layouts views
 import { IndexComponent } from "./views/index/index.component";
@@ -33,6 +34,7 @@ const routes: Routes = [
       { path: "settings", component: SettingsComponent },
       { path: "tables", component: TablesComponent },
       { path: "user-table", component: UserTableComponent },
+      { path: "website-settings", component: WebsiteSettingsComponent },
       { path: "active-locations", component: ActiveLocationsComponent},
       { path: "maps", component: MapsComponent },
       { path: "", redirectTo: "dashboard", pathMatch: "full" },

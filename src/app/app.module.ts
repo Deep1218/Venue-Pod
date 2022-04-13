@@ -50,7 +50,10 @@ import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user
 import { UserTableComponent } from './views/admin/user-table/user-table.component';
 import { ForgotPasswordComponent } from './views/auth/forgot-password/forgot-password.component';
 import { ActiveLocationsComponent } from './views/admin/active-locations/active-locations.component';
-
+import { WebsiteSettingsComponent } from './views/admin/website-settings/website-settings.component';
+import { FormsModule } from "@angular/forms";
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+import { TexteditorComponent } from './components/texteditor/texteditor.component';
 
 @NgModule({
   declarations: [
@@ -91,9 +94,11 @@ import { ActiveLocationsComponent } from './views/admin/active-locations/active-
     UserTableComponent,
     ForgotPasswordComponent,
     ActiveLocationsComponent,
+    WebsiteSettingsComponent,
+    TexteditorComponent,
 
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule,CKEditorModule,FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

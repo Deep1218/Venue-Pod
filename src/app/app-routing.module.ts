@@ -23,6 +23,7 @@ import { WebsiteSettingsComponent } from "./views/admin/website-settings/website
 import { IndexComponent } from "./views/index/index.component";
 import { LandingComponent } from "./views/landing/landing.component";
 import { ProfileComponent } from "./views/profile/profile.component";
+import { SubscriptionReportComponent } from "./views/admin/subscription-report/subscription-report.component";
 
 const routes: Routes = [
   // admin views
@@ -35,6 +36,7 @@ const routes: Routes = [
       { path: "tables", component: TablesComponent },
       { path: "user-table", component: UserTableComponent },
       { path: "website-settings", component: WebsiteSettingsComponent },
+      { path: "subscription-report", component: SubscriptionReportComponent },
       { path: "active-locations", component: ActiveLocationsComponent},
       { path: "maps", component: MapsComponent },
       { path: "", redirectTo: "dashboard", pathMatch: "full" },

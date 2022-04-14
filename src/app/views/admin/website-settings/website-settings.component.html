@@ -2,7 +2,7 @@
     <div class="flex content-center items-center justify-center h-full">
       <div class="w-full lg:w-9/12">
         <div
-          class="relative flex flex-col min-w-0 break-words w-full mb-6 bg-blueGray-200 border-solid border-0 border-blueGray-300"
+          class="relative flex flex-col min-w-0 break-words w-full mb-6 bg-white border-solid border-0 border-blueGray-300"
         >
        
           <div class="flex-auto px-4 lg:px-10 py-10 pt-4">
@@ -14,11 +14,6 @@
                 >
                   Settings
                 </label>
-                <span>
-                    <button class="bg-emerald-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                      save
-                    </button>
-                </span>
             </div>
 
             <form>
@@ -45,7 +40,28 @@
                 >
                   Policy : 
                 </label>
-                <app-texteditor></app-texteditor>
+                <textarea
+                class="
+                  form-control
+                  block
+                  w-full
+                  px-3
+                  py-1.5
+                  text-base
+                  font-normal
+                  text-gray-700
+                  bg-white bg-clip-padding
+                  border border-solid border-gray-300
+                  rounded
+                  transition
+                  ease-in-out
+                  m-0
+                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                "
+                id="exampleFormControlTextarea1"
+                rows="5"
+                placeholder="Your message"
+              ></textarea>
                
               </div>
               <div class="relative w-full mb-3">
@@ -55,9 +71,35 @@
                 >
                   Terms and conditions : 
                 </label>
-                <app-texteditor></app-texteditor>
+                <textarea
+                class="
+                  form-control
+                  block
+                  w-full
+                  px-3
+                  py-1.5
+                  text-base
+                  font-normal
+                  text-gray-700
+                  bg-white bg-clip-padding
+                  border border-solid border-gray-300
+                  rounded
+                  transition
+                  ease-in-out
+                  m-0
+                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
+                "
+                id="exampleFormControlTextarea1"
+                rows="4"
+                placeholder="Your message"
+              ></textarea>
            
               </div>
+              <span>
+                <button class="bg-emerald-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                  save
+                </button>
+              </span>
               
             </form>
           </div>

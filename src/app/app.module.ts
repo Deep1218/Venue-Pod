@@ -53,7 +53,7 @@ import { ActiveLocationsComponent } from './views/admin/active-locations/active-
 import { WebsiteSettingsComponent } from './views/admin/website-settings/website-settings.component';
 import { FormsModule } from "@angular/forms";
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
-import { TexteditorComponent } from './components/texteditor/texteditor.component';
+import { SubscriptionReportComponent } from './views/admin/subscription-report/subscription-report.component';
 
 @NgModule({
   declarations: [
@@ -95,7 +95,7 @@ import { TexteditorComponent } from './components/texteditor/texteditor.componen
     ForgotPasswordComponent,
     ActiveLocationsComponent,
     WebsiteSettingsComponent,
-    TexteditorComponent,
+    SubscriptionReportComponent,
 
   ],
   imports: [BrowserModule, AppRoutingModule,CKEditorModule,FormsModule],

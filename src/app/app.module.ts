@@ -49,7 +49,9 @@ import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user-dropdown.component";
 import { ForgotPasswordComponent } from './views/auth/forgot-password/forgot-password.component';
 import { VenueListComponent } from './views/user/venue-list/venue-list.component';
-
+import { CardAdInfoComponent } from './components/cards/card-ad-info/card-ad-info.component';
+import { CardFilterComponent } from './components/cards/card-filter/card-filter.component';
+import { CardSearchFilterComponent } from './components/cards/card-search-filter/card-search-filter.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -88,6 +90,9 @@ import { VenueListComponent } from './views/user/venue-list/venue-list.component
     ProfileComponent,
     ForgotPasswordComponent,
     VenueListComponent,
+    CardAdInfoComponent,
+    CardFilterComponent,
+    CardSearchFilterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

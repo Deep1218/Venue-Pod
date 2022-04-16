@@ -29,6 +29,7 @@ import { ChatboxComponent } from "./views/chatbox/chatbox.component";
 import{VenueItemComponent} from "./views/venue-item/venue-item.component";
 
 import { BookedVenuesComponent } from "./views/booked-venues/booked-venues.component";
+import { OwnerDashboardComponent } from "./views/owner-dashboard/owner-dashboard.component";
 
 
 const routes: Routes = [
@@ -66,6 +67,7 @@ const routes: Routes = [
 
   // { path: "landing", component: LandingComponent },
   { path: "booked", component:BookedVenuesComponent},
+  { path: "ownerDashboard", component:OwnerDashboardComponent},
 
   { path: "", component: IndexComponent },
   { path: "**", redirectTo: "", pathMatch: "full" },

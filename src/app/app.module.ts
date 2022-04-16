@@ -53,9 +53,22 @@ import { ActiveLocationsComponent } from './views/admin/active-locations/active-
 
 import { ChatboxComponent } from './views/chatbox/chatbox.component';
 import { VenueItemComponent } from "./views/venue-item/venue-item.component";
-
+import dayGridPlugin from '@fullcalendar/daygrid';
+import interactionPlugin from '@fullcalendar/interaction';
+import { NgxDonutChartModule } from "ngx-doughnut-chart";
+import { FullCalendarModule, FullCalendarComponent } from '@fullcalendar/angular';
 import { BookedVenuesComponent } from './views/booked-venues/booked-venues.component';
+import { OwnerDashboardComponent } from './views/owner-dashboard/owner-dashboard.component';
+import { CardCalenderComponent } from './components/cards/card-calender/card-calender.component';
+import { CardDonutchartComponent } from './components/cards/card-donutchart/card-donutchart.component';
 
+FullCalendarModule.registerPlugins([ // register FullCalendar plugins
+  dayGridPlugin,
+]);
+FullCalendarModule.registerPlugins([ // register FullCalendar plugins
+  dayGridPlugin,
+  interactionPlugin
+]);
 
 @NgModule({
   declarations: [
@@ -102,9 +115,15 @@ import { BookedVenuesComponent } from './views/booked-venues/booked-venues.compo
 
     BookedVenuesComponent,
 
+    OwnerDashboardComponent,
+
+    CardCalenderComponent,
+
+    CardDonutchartComponent,
+
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, FullCalendarModule,NgxDonutChartModule],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

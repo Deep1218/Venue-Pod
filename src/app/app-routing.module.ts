@@ -24,6 +24,7 @@ import { IndexComponent } from "./views/index/index.component";
 import { LandingComponent } from "./views/landing/landing.component";
 import { ProfileComponent } from "./views/profile/profile.component";
 import { SubscriptionReportComponent } from "./views/admin/subscription-report/subscription-report.component";
+import { NotificationComponent } from "./views/admin/notification/notification.component";
 
 const routes: Routes = [
   // admin views
@@ -38,6 +39,7 @@ const routes: Routes = [
       { path: "website-settings", component: WebsiteSettingsComponent },
       { path: "subscription-report", component: SubscriptionReportComponent },
       { path: "active-locations", component: ActiveLocationsComponent},
+      { path: "notification", component: NotificationComponent},
       { path: "maps", component: MapsComponent },
       { path: "", redirectTo: "dashboard", pathMatch: "full" },
     ],

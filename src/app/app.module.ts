@@ -54,6 +54,7 @@ import { WebsiteSettingsComponent } from './views/admin/website-settings/website
 import { FormsModule } from "@angular/forms";
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { SubscriptionReportComponent } from './views/admin/subscription-report/subscription-report.component';
+import { NotificationComponent } from './views/admin/notification/notification.component';
 
 @NgModule({
   declarations: [
@@ -96,6 +97,7 @@ import { SubscriptionReportComponent } from './views/admin/subscription-report/s
     ActiveLocationsComponent,
     WebsiteSettingsComponent,
     SubscriptionReportComponent,
+    NotificationComponent,
 
   ],
   imports: [BrowserModule, AppRoutingModule,CKEditorModule,FormsModule],

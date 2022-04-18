@@ -28,6 +28,7 @@ export class CardDonutchartComponent implements OnInit {
       value: 25,
       color: '#475569',
     },
+    
   ];
   constructor() { }
 

@@ -1,5 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -51,9 +52,6 @@ import { UserTableComponent } from './views/admin/user-table/user-table.componen
 import { ForgotPasswordComponent } from './views/auth/forgot-password/forgot-password.component';
 import { ActiveLocationsComponent } from './views/admin/active-locations/active-locations.component';
 import { WebsiteSettingsComponent } from './views/admin/website-settings/website-settings.component';
-import { FormsModule } from "@angular/forms";
-import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
-import { TexteditorComponent } from './components/texteditor/texteditor.component';
 
 @NgModule({
   declarations: [
@@ -95,10 +93,12 @@ import { TexteditorComponent } from './components/texteditor/texteditor.componen
     ForgotPasswordComponent,
     ActiveLocationsComponent,
     WebsiteSettingsComponent,
-    TexteditorComponent,
-
   ],
-  imports: [BrowserModule, AppRoutingModule,CKEditorModule,FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

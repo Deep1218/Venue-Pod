@@ -52,6 +52,7 @@ import { UserTableComponent } from './views/admin/user-table/user-table.componen
 import { ForgotPasswordComponent } from './views/auth/forgot-password/forgot-password.component';
 import { ActiveLocationsComponent } from './views/admin/active-locations/active-locations.component';
 import { WebsiteSettingsComponent } from './views/admin/website-settings/website-settings.component';
+import { TextAreaComponent } from './components/text-area/text-area.component';
 
 @NgModule({
   declarations: [
@@ -93,6 +94,7 @@ import { WebsiteSettingsComponent } from './views/admin/website-settings/website
     ForgotPasswordComponent,
     ActiveLocationsComponent,
     WebsiteSettingsComponent,
+    TextAreaComponent,
   ],
   imports: [
     BrowserModule,

@@ -2,7 +2,7 @@
     <div class="flex content-center items-center justify-center h-full">
       <div class="w-full lg:w-9/12">
         <div
-          class="relative flex flex-col min-w-0 break-words w-full mb-6 bg-blueGray-200 border-solid border-0 border-blueGray-300"
+          class="relative flex flex-col min-w-0 break-words w-full mb-6 bg-blueGray-200 border-solid border border-blueGray-300 shadow-lg"
         >
 
           <div class="flex-auto px-4 lg:px-10 py-10 pt-4">
@@ -45,15 +45,28 @@
                 >
                   Policy :
                 </label>
-
+                <textarea
+                  rows="6"
+                  cols="80"
+                  class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                  placeholder="Policy...."
+                ></textarea>
+                <!-- <app-text-area></app-text-area> -->
               </div>
               <div class="relative w-full mb-3">
                 <label
-                  class="block  text-blueGray-600 text-3xs font-bold mb-2"
-                  htmlFor="grid-password"
+                class="block  text-blueGray-600 text-3xs font-bold mb-2"
+                htmlFor="grid-password"
                 >
-                  Terms and conditions :
-                </label>
+                Terms and conditions :
+              </label>
+              <textarea
+                rows="6"
+                cols="80"
+                class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full"
+                placeholder="Terms and conditions...."
+              ></textarea>
+              <!-- <app-text-area></app-text-area> -->
 
               </div>
 

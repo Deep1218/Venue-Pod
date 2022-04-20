@@ -63,10 +63,8 @@ import { CardCalenderComponent } from './components/cards/card-calender/card-cal
 import { CardDonutchartComponent } from './components/cards/card-donutchart/card-donutchart.component';
 import { PrivacyPolicyComponent } from './views/privacy-policy/privacy-policy.component';
 import { TermsComponent } from './views/terms/terms.component';
+import { FaqComponent } from './views/faq/faq.component';
 
-FullCalendarModule.registerPlugins([ // register FullCalendar plugins
-  dayGridPlugin,
-]);
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
   interactionPlugin
@@ -126,6 +124,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     PrivacyPolicyComponent,
 
     TermsComponent,
+
+    FaqComponent,
 
   ],
   imports: [BrowserModule, AppRoutingModule, FullCalendarModule,NgxDonutChartModule],

@@ -13,22 +13,26 @@
         "e2e": "ng e2e",
         "build:tailwind": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css",
         "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm start"
-
     },
-
     "dependencies": {
         "@angular/animations": "11.2.5",
         "@angular/common": "11.2.5",
         "@angular/compiler": "11.2.5",
         "@angular/core": "11.2.5",
         "@angular/forms": "11.2.5",
+        "@angular/localize": "^13.3.3",
         "@angular/platform-browser": "11.2.5",
         "@angular/platform-browser-dynamic": "11.2.5",
         "@angular/router": "11.2.5",
         "@fortawesome/fontawesome-free": "5.15.3",
+        "@fullcalendar/angular": "^5.11.0",
+        "@fullcalendar/daygrid": "^5.11.0",
+        "@fullcalendar/interaction": "^5.11.0",
         "@popperjs/core": "2.9.1",
         "@tailwindcss/forms": "0.2.1",
         "chart.js": "2.9.4",
+        "fullcalendar": "^5.11.0",
+        "ngx-doughnut-chart": "0.0.4",
         "rxjs": "6.6.6",
         "tailwindcss": "2.0.4",
         "tslib": "2.1.0",

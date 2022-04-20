@@ -55,6 +55,7 @@ import { FormsModule } from "@angular/forms";
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { SubscriptionReportComponent } from './views/admin/subscription-report/subscription-report.component';
 import { NotificationComponent } from './views/admin/notification/notification.component';
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 
 @NgModule({
   declarations: [
@@ -100,7 +101,13 @@ import { NotificationComponent } from './views/admin/notification/notification.c
     NotificationComponent,
 
   ],
-  imports: [BrowserModule, AppRoutingModule,CKEditorModule,FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    CKEditorModule,
+    FormsModule,
+    NgMultiSelectDropDownModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

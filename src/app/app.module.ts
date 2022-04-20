@@ -54,6 +54,7 @@ import { ActiveLocationsComponent } from './views/admin/active-locations/active-
 import { ChatboxComponent } from './views/chatbox/chatbox.component';
 import { VenueItemComponent } from "./views/venue-item/venue-item.component";
 import { BookedVenuesComponent } from './views/booked-venues/booked-venues.component';
+import { NavbarComponent } from './components/navbars/navbar/navbar.component';
 
 
 @NgModule({
@@ -98,6 +99,7 @@ import { BookedVenuesComponent } from './views/booked-venues/booked-venues.compo
     ChatboxComponent,
     VenueItemComponent,
     BookedVenuesComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,23 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-import { FormsModule } from '@angular/forms';
 
+// import { ReactiveFormsModule } from "@angular/forms";
+import { CommonModule } from "@angular/common";
+
+// chart imports
+import { NgxDonutChartModule } from "ngx-doughnut-chart";
+
+// calendar
+import { CalendarModule, DateAdapter } from "angular-calendar";
+import { adapterFactory } from "angular-calendar/date-adapters/date-fns";
 import { AppRoutingModule } from "./app-routing.module";
+import { NgbModalModule } from "@ng-bootstrap/ng-bootstrap";
+import { FlatpickrModule } from "angularx-flatpickr";
+
+// import dayGridPlugin from '@fullcalendar/daygrid';
+// import interactionPlugin from '@fullcalendar/interaction';
+// import { FullCalendarModule, FullCalendarComponent } from '@fullcalendar/angular';
+
 import { AppComponent } from "./app.component";
 
 // layouts
@@ -47,28 +62,27 @@ import { PagesDropdownComponent } from "./components/dropdowns/pages-dropdown/pa
 import { NotificationDropdownComponent } from "./components/dropdowns/notification-dropdown/notification-dropdown.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user-dropdown.component";
-import { CardEmptyComponent } from './components/cards/card-empty/card-empty.component';
-import { UserTableComponent } from './views/admin/user-table/user-table.component';
-import { ForgotPasswordComponent } from './views/auth/forgot-password/forgot-password.component';
-import { ActiveLocationsComponent } from './views/admin/active-locations/active-locations.component';
-import { ChatboxComponent } from './views/chatbox/chatbox.component';
+import { CardEmptyComponent } from "./components/cards/card-empty/card-empty.component";
+import { UserTableComponent } from "./views/admin/user-table/user-table.component";
+import { ForgotPasswordComponent } from "./views/auth/forgot-password/forgot-password.component";
+import { ActiveLocationsComponent } from "./views/admin/active-locations/active-locations.component";
+import { ChatboxComponent } from "./views/chatbox/chatbox.component";
 import { VenueItemComponent } from "./views/venue-item/venue-item.component";
-import dayGridPlugin from '@fullcalendar/daygrid';
-import interactionPlugin from '@fullcalendar/interaction';
-import { NgxDonutChartModule } from "ngx-doughnut-chart";
-import { FullCalendarModule, FullCalendarComponent } from '@fullcalendar/angular';
-import { BookedVenuesComponent } from './views/booked-venues/booked-venues.component';
-import { OwnerDashboardComponent } from './views/owner-dashboard/owner-dashboard.component';
-import { CardCalenderComponent } from './components/cards/card-calender/card-calender.component';
-import { CardDonutchartComponent } from './components/cards/card-donutchart/card-donutchart.component';
-import { PrivacyPolicyComponent } from './views/privacy-policy/privacy-policy.component';
-import { TermsComponent } from './views/terms/terms.component';
-import { FaqComponent } from './views/faq/faq.component';
 
-FullCalendarModule.registerPlugins([ // register FullCalendar plugins
-  dayGridPlugin,
-  interactionPlugin
-]);
+import { BookedVenuesComponent } from "./views/booked-venues/booked-venues.component";
+import { OwnerDashboardComponent } from "./views/owner-dashboard/owner-dashboard.component";
+import { CardCalenderComponent } from "./components/cards/card-calender/card-calender.component";
+import { CardDonutchartComponent } from "./components/cards/card-donutchart/card-donutchart.component";
+import { PrivacyPolicyComponent } from "./views/privacy-policy/privacy-policy.component";
+import { TermsComponent } from "./views/terms/terms.component";
+import { FaqComponent } from "./views/faq/faq.component";
+
+import { FormsModule } from "@angular/forms";
+
+// FullCalendarModule.registerPlugins([ // register FullCalendar plugins
+//   dayGridPlugin,
+//   interactionPlugin
+// ]);
 
 @NgModule({
   declarations: [
@@ -124,16 +138,23 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     TermsComponent,
 
     FaqComponent,
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CommonModule,
+    // ReactiveFormsModule,
+    FlatpickrModule.forRoot(),
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory,
+    }),
+    // FullCalendarModule,
+    NgxDonutChartModule,
+    NgbModalModule,
     FormsModule,
-    FullCalendarModule,
-    NgxDonutChartModule
   ],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

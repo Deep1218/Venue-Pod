@@ -61,10 +61,10 @@ import { BookedVenuesComponent } from './views/booked-venues/booked-venues.compo
 import { OwnerDashboardComponent } from './views/owner-dashboard/owner-dashboard.component';
 import { CardCalenderComponent } from './components/cards/card-calender/card-calender.component';
 import { CardDonutchartComponent } from './components/cards/card-donutchart/card-donutchart.component';
+import { PrivacyPolicyComponent } from './views/privacy-policy/privacy-policy.component';
+import { TermsComponent } from './views/terms/terms.component';
+import { FaqComponent } from './views/faq/faq.component';
 
-FullCalendarModule.registerPlugins([ // register FullCalendar plugins
-  dayGridPlugin,
-]);
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
   interactionPlugin
@@ -118,6 +118,12 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     CardCalenderComponent,
 
     CardDonutchartComponent,
+
+    PrivacyPolicyComponent,
+
+    TermsComponent,
+
+    FaqComponent,
 
   ],
   imports: [

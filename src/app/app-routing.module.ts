@@ -30,6 +30,9 @@ import{VenueItemComponent} from "./views/venue-item/venue-item.component";
 
 import { BookedVenuesComponent } from "./views/booked-venues/booked-venues.component";
 import { OwnerDashboardComponent } from "./views/owner-dashboard/owner-dashboard.component";
+import { PrivacyPolicyComponent } from "./views/privacy-policy/privacy-policy.component";
+import { TermsComponent } from "./views/terms/terms.component";
+import { FaqComponent } from "./views/faq/faq.component";
 
 
 const routes: Routes = [
@@ -56,7 +59,7 @@ const routes: Routes = [
       { path: "register", component: RegisterComponent },
       { path: "forgot-password", component: ForgotPasswordComponent },
       { path: "", redirectTo: "login", pathMatch: "full" },
-    ],
+    ],  
   },
   // no layout views
   { path: "profile", component: ProfileComponent },
@@ -68,7 +71,9 @@ const routes: Routes = [
   // { path: "landing", component: LandingComponent },
   { path: "booked", component:BookedVenuesComponent},
   { path: "ownerDashboard", component:OwnerDashboardComponent},
-
+  { path: "privacyPolicy", component:PrivacyPolicyComponent },
+  { path: "faq" , component:FaqComponent},
+  { path: "terms" , component:TermsComponent},
   { path: "", component: IndexComponent },
   { path: "**", redirectTo: "", pathMatch: "full" },
 ];

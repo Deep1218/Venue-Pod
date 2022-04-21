@@ -1,5 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -50,7 +51,6 @@ import { CardEmptyComponent } from './components/cards/card-empty/card-empty.com
 import { UserTableComponent } from './views/admin/user-table/user-table.component';
 import { ForgotPasswordComponent } from './views/auth/forgot-password/forgot-password.component';
 import { ActiveLocationsComponent } from './views/admin/active-locations/active-locations.component';
-
 import { ChatboxComponent } from './views/chatbox/chatbox.component';
 import { VenueItemComponent } from "./views/venue-item/venue-item.component";
 import dayGridPlugin from '@fullcalendar/daygrid';
@@ -109,10 +109,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     UserTableComponent,
     ForgotPasswordComponent,
     ActiveLocationsComponent,
-
     ChatboxComponent,
     VenueItemComponent,
-
     BookedVenuesComponent,
 
     OwnerDashboardComponent,
@@ -122,7 +120,13 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     CardDonutchartComponent,
 
   ],
-  imports: [BrowserModule, AppRoutingModule, FullCalendarModule,NgxDonutChartModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    FullCalendarModule,
+    NgxDonutChartModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

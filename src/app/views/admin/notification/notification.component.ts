@@ -24,16 +24,16 @@ export class NotificationComponent implements OnInit {
   dropdownSettings : IDropdownSettings = {};
   ngOnInit() {
     this.dropdownList = [
-      { item_id: 1, item_text: 'Mumbai' },
-      { item_id: 2, item_text: 'Bangaluru' },
-      { item_id: 3, item_text: 'Pune' },
-      { item_id: 4, item_text: 'Navsari' },
-      { item_id: 5, item_text: 'New Delhi' }
+      { item_id: 1, item_text: 'Patel Shivansh Rameshbhai' },
+      { item_id: 2, item_text: 'Darji Ayush Paranjaybhai' },
+      { item_id: 3, item_text: 'Modi Raman Nareshbhai' },
+      { item_id: 4, item_text: 'Prajapati Jayesh Kalpeshbhai' },
+      { item_id: 5, item_text: 'Sharma Rohit Hareshbhai' }
     ];
-    this.selectedItems = [
-      { item_id: 3, item_text: 'Pune' },
-      { item_id: 4, item_text: 'Navsari' }
-    ];
+    // this.selectedItems = [
+    //   { item_id: 3, item_text: 'Pune' },
+    //   { item_id: 4, item_text: 'Navsari' }
+    // ];
     this.dropdownSettings = {
       singleSelection: false,
       idField: 'item_id',

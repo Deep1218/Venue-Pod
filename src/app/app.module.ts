@@ -1,5 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -20,7 +21,6 @@ import { RegisterComponent } from "./views/auth/register/register.component";
 
 // no layouts views
 import { IndexComponent } from "./views/index/index.component";
-import { LandingComponent } from "./views/landing/landing.component";
 import { ProfileComponent } from "./views/profile/profile.component";
 
 // components for views and layouts
@@ -47,15 +47,37 @@ import { PagesDropdownComponent } from "./components/dropdowns/pages-dropdown/pa
 import { NotificationDropdownComponent } from "./components/dropdowns/notification-dropdown/notification-dropdown.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user-dropdown.component";
+import { CardEmptyComponent } from './components/cards/card-empty/card-empty.component';
 import { UserTableComponent } from './views/admin/user-table/user-table.component';
 import { ForgotPasswordComponent } from './views/auth/forgot-password/forgot-password.component';
 import { ActiveLocationsComponent } from './views/admin/active-locations/active-locations.component';
+<<<<<<< HEAD
 import { WebsiteSettingsComponent } from './views/admin/website-settings/website-settings.component';
 import { FormsModule } from "@angular/forms";
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { SubscriptionReportComponent } from './views/admin/subscription-report/subscription-report.component';
 import { NotificationComponent } from './views/admin/notification/notification.component';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+=======
+import { ChatboxComponent } from './views/chatbox/chatbox.component';
+import { VenueItemComponent } from "./views/venue-item/venue-item.component";
+import dayGridPlugin from '@fullcalendar/daygrid';
+import interactionPlugin from '@fullcalendar/interaction';
+import { NgxDonutChartModule } from "ngx-doughnut-chart";
+import { FullCalendarModule, FullCalendarComponent } from '@fullcalendar/angular';
+import { BookedVenuesComponent } from './views/booked-venues/booked-venues.component';
+import { OwnerDashboardComponent } from './views/owner-dashboard/owner-dashboard.component';
+import { CardCalenderComponent } from './components/cards/card-calender/card-calender.component';
+import { CardDonutchartComponent } from './components/cards/card-donutchart/card-donutchart.component';
+import { PrivacyPolicyComponent } from './views/privacy-policy/privacy-policy.component';
+import { TermsComponent } from './views/terms/terms.component';
+import { FaqComponent } from './views/faq/faq.component';
+
+FullCalendarModule.registerPlugins([ // register FullCalendar plugins
+  dayGridPlugin,
+  interactionPlugin
+]);
+>>>>>>> f4b8cb5a23c9faae17968c68907b972847a532ad
 
 @NgModule({
   declarations: [
@@ -91,16 +113,42 @@ import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
     LoginComponent,
     RegisterComponent,
     IndexComponent,
-    LandingComponent,
     ProfileComponent,
+    CardEmptyComponent,
     UserTableComponent,
     ForgotPasswordComponent,
     ActiveLocationsComponent,
+<<<<<<< HEAD
     WebsiteSettingsComponent,
     SubscriptionReportComponent,
     NotificationComponent,
+=======
+    ChatboxComponent,
+    VenueItemComponent,
+    BookedVenuesComponent,
+>>>>>>> f4b8cb5a23c9faae17968c68907b972847a532ad
+
+    OwnerDashboardComponent,
+
+    CardCalenderComponent,
+
+    CardDonutchartComponent,
+
+    PrivacyPolicyComponent,
+
+    TermsComponent,
+
+    FaqComponent,
 
   ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    FullCalendarModule,
+    NgxDonutChartModule
+  ],
+<<<<<<< HEAD
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -108,7 +156,9 @@ import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
     FormsModule,
     NgMultiSelectDropDownModule
   ],
+=======
+>>>>>>> f4b8cb5a23c9faae17968c68907b972847a532ad
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule { }

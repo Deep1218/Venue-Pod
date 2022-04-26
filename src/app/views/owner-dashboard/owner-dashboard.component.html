@@ -1,0 +1,233 @@
+<p>owner-dashboard works!</p>
+<app-auth-navbar></app-auth-navbar>
+
+<!-- header stats -->
+
+<!-- Header -->
+
+<div class="relative bg-blueGray-800 md:pt-32 pb-32 pt-12">
+    <div class="px-4 md:px-10 mx-auto w-full">
+        <div>
+            <!-- Card stats -->
+            <div class="flex flex-wrap justify-center">
+                <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
+
+                    <app-card-stats statSubtitle="TOTAL BOOKINGS" statTitle="1817" statArrow="down" statPercentColor="text-red-500" statDescripiron="Since last week" statIconName="fas fa-money-bill-alt" statIconColor="bg-orange-500"></app-card-stats>
+                </div>
+                <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
+
+                    <app-card-stats statSubtitle="TODAY BOOKING" statTitle="18" statArrow="down" statPercentColor="text-orange-500" statDescripiron="Since yesterday" statIconName="fas fa-dollar-sign" statIconColor="bg-pink-500"></app-card-stats>
+                </div>
+                <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
+
+
+                    <app-card-stats statSubtitle="Subscription End" statTitle="30 july " statArrow="up" statPercentColor="text-emerald-500" statDescripiron="Since last month" statIconName="fas fa-dollar-sign" statIconColor="bg-emerald-500"></app-card-stats>
+                </div>
+                <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
+
+
+                    <app-card-stats statSubtitle="clicks" statTitle="1Mn" statArrow="up" statPercentColor="text-emerald-500" statDescripiron="Since last month" statIconName="fas fa-dollar-sign" statIconColor="bg-emerald-500"></app-card-stats>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- end header stats -->
+
+<div class="  mb-12 xl:mb-0 px-4  flex justify-item-center py-20 bg-blueGray-100" style=" margin-top: -8%; width:100vw; display: flex; justify-content: center ;">
+
+    <!-- venue list -->
+    <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 p-8 shadow-lg rounded" style="width: 60vw;">
+        <div class="rounded-t mb-0 px-4 py-3 border-0">
+            <div class="flex flex-wrap items-center">
+                <div class="relative w-full px-4 max-w-full flex-grow flex-1">
+                    <h3 class="font-semibold text-base text-blueGray-700">Total venues</h3>
+                </div>
+                <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
+                    <button class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+            See all
+          </button>
+                </div>
+            </div>
+        </div>
+        <div class="block w-full overflow-x-auto">
+
+            <!-- Projects table -->
+            <table class="items-center w-full bg-transparent border-collapse">
+                <thead>
+                    <tr>
+                        <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                            venue name
+                        </th>
+                        <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                            Venue address
+                        </th>
+
+
+                        <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                            Action
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
+                            Shukan party plot
+                        </th>
+                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                            Jodhpur Village Rd, Jodhpur Village, Ahmedabad, Gujarat 380015
+                        </td>
+
+                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                            <i class="text-emerald-500 mr-4"></i>
+                            <button class="bg-emerald-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                Enable
+              </button>
+                            <button class="bg-red-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                Disable
+              </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
+                            Smarpan Baug party plot
+                        </th>
+                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                            Satellite Rd, near Hotel Marriot Cross, Satellite, Ahmedabad, Gujarat 380015
+                        </td>
+
+                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                            <i class="text-orange-500 mr-4"></i>
+                            <button class="bg-emerald-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                Enable
+              </button>
+                            <button class="bg-red-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                Disable
+              </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
+                            Shukan party plot
+                        </th>
+                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                            Jodhpur Village Rd, Jodhpur Village, Ahmedabad, Gujarat 380015
+                        </td>
+
+                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                            <i class="text-emerald-500 mr-4"></i>
+                            <button class="bg-emerald-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                Enable
+              </button>
+                            <button class="bg-red-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                Disable
+              </button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">
+                            Shukan party plot
+                        </th>
+                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                            Jodhpur Village Rd, Jodhpur Village, Ahmedabad, Gujarat 380015
+                        </td>
+
+                        <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
+                            <i class="text-emerald-500 mr-4"></i>
+                            <button class="bg-emerald-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                Enable
+              </button>
+                            <button class="bg-red-500 text-white active:bg-red-600 font-bold uppercase text-xs px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
+                Disable
+              </button>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- ending bookiing request -->
+<!-- calender and donut chart -->
+<div class="px-4 mx-auto bg-blueGray-100 flex flex-1 justify-center items-center pb-20">
+    <div class="flex flex-wrap bg-blueGray-100">
+        <div class="w-full flex-1">
+            <div class="text-blueGray-700 rounded-lg shadow-lg flex justify-center bg-white border border-solid border-blueGray-100">
+                <app-card-calender class="p-10"></app-card-calender>
+            </div>
+        </div>
+        <div class="w-full px-4 flex-1">
+            <div class="p-10 text-blueGray-700 flex justify-center shadow-lg rounded-lg border border-solid border-blueGray-100 bg-white">
+                <app-card-donutchart></app-card-donutchart>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- <div class="flex flex-wrap " style="padding-bottom: 5rem;  justify-content: center;background-color: #f5f3ff;">
+    <div class="max-w-sm bg-white rounded overflow-hidden shadow-lg border  shadow-lg " style="margin-left: 3rem; justify-content: center; border-radius: 13px;">
+        <div class="text-5xl " style="width:25rem;height: 10rem; display: flex; justify-content: center; padding-top: 3rem;">Light</div>
+        <div class="" style="background-color: #e9d5ff;">
+            <div style="padding-top: 3rem; ">
+                <p style="margin-top: 2rem; display: flex; justify-content: center; ">Lorem ipsum dolor sit amet.</p>
+                <p style="margin-top: 1rem; display: flex; justify-content: center;">Lorem, ipsum dolor.</p>
+            </div>
+            <div style=" padding-top: 3rem;">
+                <p class="text-5xl font-bold" style="display: flex; justify-content: center;">1299/</p>
+                <p class="text-2xl" style="display: flex; justify-content: center; margin-top: 1rem;">Month</p>
+            </div>
+            <div style="padding-left: 8rem; padding-top: 3rem; padding-bottom:3rem ;">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" style="width: 8rem;">
+                Buy
+              </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-sm rounded overflow-hidden shadow-lg border  shadow-lg " style="margin-left: 3rem; justify-content: center; border-radius: 13px;">
+        <div class="text-5xl bg-white " style="width:25rem;height: 10rem; display: flex; justify-content: center; padding-top: 3rem;">Buisness</div>
+        <div class="" style="background-color: #d8b4fe;">
+            <div style="padding-top: 3rem; ">
+                <p style="margin-top: 2rem; display: flex; justify-content: center; ">Lorem ipsum dolor sit amet.</p>
+                <p style="margin-top: 1rem; display: flex; justify-content: center;">Lorem, ipsum dolor.</p>
+            </div>
+            <div style=" padding-top: 3rem;">
+                <p class="text-5xl font-bold" style="display: flex; justify-content: center;">2999/</p>
+                <p class="text-2xl" style="display: flex; justify-content: center; margin-top: 1rem;">Three Month</p>
+            </div>
+            <div style="padding-left: 8rem; padding-top: 3rem; padding-bottom:3rem ;">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" style="width: 8rem;">
+                Buy
+              </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-sm rounded overflow-hidden shadow-lg border  shadow-lg " style="margin-left: 3rem; justify-content: center; border-radius: 13px;">
+        <div class="text-5xl bg-white" style="width:25rem;height: 10rem; display: flex; justify-content: center; padding-top: 3rem; ">pro</div>
+        <div class="" style="background-color: #ddd6fe;">
+            <div style="padding-top: 3rem; ">
+                <p style="margin-top: 2rem; display: flex; justify-content: center; ">Lorem ipsum dolor sit amet.</p>
+                <p style="margin-top: 1rem; display: flex; justify-content: center;">Lorem, ipsum dolor.</p>
+            </div>
+            <div style=" padding-top: 3rem;">
+                <p class="text-5xl font-bold" style="display: flex; justify-content: center;">9999/</p>
+                <p class="text-2xl" style="display: flex; justify-content: center; margin-top: 1rem;">year</p>
+            </div>
+            <div style="padding-left: 8rem; padding-top: 3rem; padding-bottom:3rem ;">
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" style="width: 8rem;">
+                Buy
+              </button>
+            </div>
+        </div>
+    </div>
+</div> -->
+<app-footer></app-footer>

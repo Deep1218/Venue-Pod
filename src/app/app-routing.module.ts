@@ -21,10 +21,22 @@ import { WebsiteSettingsComponent } from "./views/admin/website-settings/website
 
 // no layouts views
 import { IndexComponent } from "./views/index/index.component";
-import { LandingComponent } from "./views/landing/landing.component";
+// import { LandingComponent } from "./views/landing/landing.component";
 import { ProfileComponent } from "./views/profile/profile.component";
 import { SubscriptionReportComponent } from "./views/admin/subscription-report/subscription-report.component";
 import { NotificationComponent } from "./views/admin/notification/notification.component";
+
+import { ChatboxComponent } from "./views/chatbox/chatbox.component";
+
+// venue-item views
+import{VenueItemComponent} from "./views/venue-item/venue-item.component";
+
+import { BookedVenuesComponent } from "./views/booked-venues/booked-venues.component";
+import { OwnerDashboardComponent } from "./views/owner-dashboard/owner-dashboard.component";
+import { PrivacyPolicyComponent } from "./views/privacy-policy/privacy-policy.component";
+import { TermsComponent } from "./views/terms/terms.component";
+import { FaqComponent } from "./views/faq/faq.component";
+
 
 const routes: Routes = [
   // admin views
@@ -53,11 +65,21 @@ const routes: Routes = [
       { path: "register", component: RegisterComponent },
       { path: "forgot-password", component: ForgotPasswordComponent },
       { path: "", redirectTo: "login", pathMatch: "full" },
-    ],
+    ],  
   },
   // no layout views
   { path: "profile", component: ProfileComponent },
-  { path: "landing", component: LandingComponent },
+
+  // { path: "landing", component: LandingComponent },
+  { path: "chatbox", component: ChatboxComponent},
+  {path:'venue-item',component: VenueItemComponent},
+
+  // { path: "landing", component: LandingComponent },
+  { path: "booked", component:BookedVenuesComponent},
+  { path: "ownerDashboard", component:OwnerDashboardComponent},
+  { path: "privacyPolicy", component:PrivacyPolicyComponent },
+  { path: "faq" , component:FaqComponent},
+  { path: "terms" , component:TermsComponent},
   { path: "", component: IndexComponent },
   { path: "**", redirectTo: "", pathMatch: "full" },
 ];

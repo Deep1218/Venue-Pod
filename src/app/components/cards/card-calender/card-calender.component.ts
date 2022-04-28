@@ -1,14 +1,9 @@
-// import { CalendarOptions } from '@fullcalendar/angular';
-
-// import { FullCalendarModule, FullCalendarComponent } from '@fullcalendar/angular';
 import {
   Component,
   OnInit,
   ChangeDetectionStrategy,
   ViewChild,
   TemplateRef,
-  Input,
-  Output,
 } from "@angular/core";
 import {
   startOfDay,
@@ -28,7 +23,6 @@ import {
   CalendarEventTimesChangedEvent,
   CalendarView,
 } from "angular-calendar";
-import { FormsModule } from "@angular/forms";
 
 const colors: any = {
   red: {
@@ -150,7 +144,7 @@ export class CardCalenderComponent implements OnInit {
 
   activeDayIsOpen: boolean = true;
 
-  constructor(private modal: NgbModal, private formModule: FormsModule) {}
+  constructor(private modal: NgbModal) {}
 
   dayClicked({ date, events }: { date: Date; events: CalendarEvent[] }): void {
     if (isSameMonth(date, this.viewDate)) {

@@ -30,9 +30,7 @@
               "node_modules/angular-calendar/css/angular-calendar.css",
               "src/assets/styles/tailwind.css",
               "./node_modules/@fortawesome/fontawesome-free/css/all.min.css",
-              "src/styles.css",
-              "./node_modules/@fullcalendar/core",
-              "./node_modules/@fullcalendar/daygrid"
+              "src/styles.css"
             ],
             "scripts": []
           },

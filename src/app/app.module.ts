@@ -1,7 +1,5 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-
-// import { ReactiveFormsModule } from "@angular/forms";
 import { CommonModule } from "@angular/common";
 
 // chart imports
@@ -11,12 +9,7 @@ import { NgxDonutChartModule } from "ngx-doughnut-chart";
 import { CalendarModule, DateAdapter } from "angular-calendar";
 import { adapterFactory } from "angular-calendar/date-adapters/date-fns";
 import { AppRoutingModule } from "./app-routing.module";
-import { NgbModalModule } from "@ng-bootstrap/ng-bootstrap";
 import { FlatpickrModule } from "angularx-flatpickr";
-
-// import dayGridPlugin from '@fullcalendar/daygrid';
-// import interactionPlugin from '@fullcalendar/interaction';
-// import { FullCalendarModule, FullCalendarComponent } from '@fullcalendar/angular';
 
 import { AppComponent } from "./app.component";
 
@@ -71,18 +64,14 @@ import { VenueItemComponent } from "./views/venue-item/venue-item.component";
 
 import { BookedVenuesComponent } from "./views/booked-venues/booked-venues.component";
 import { OwnerDashboardComponent } from "./views/owner-dashboard/owner-dashboard.component";
-import { CardCalenderComponent } from "./components/cards/card-calender/card-calender.component";
+// import { CardCalenderComponent } from "./components/cards/card-calender/card-calender.component";
 import { CardDonutchartComponent } from "./components/cards/card-donutchart/card-donutchart.component";
 import { PrivacyPolicyComponent } from "./views/privacy-policy/privacy-policy.component";
 import { TermsComponent } from "./views/terms/terms.component";
 import { FaqComponent } from "./views/faq/faq.component";
+import { CardCalenderRpComponent } from "./components/cards/card-calender-rp/card-calender-rp.component";
 
 import { FormsModule } from "@angular/forms";
-
-// FullCalendarModule.registerPlugins([ // register FullCalendar plugins
-//   dayGridPlugin,
-//   interactionPlugin
-// ]);
 
 @NgModule({
   declarations: [
@@ -126,32 +115,24 @@ import { FormsModule } from "@angular/forms";
     ChatboxComponent,
     VenueItemComponent,
     BookedVenuesComponent,
-
     OwnerDashboardComponent,
-
-    CardCalenderComponent,
-
+    // CardCalenderComponent,
     CardDonutchartComponent,
-
     PrivacyPolicyComponent,
-
     TermsComponent,
-
     FaqComponent,
+    CardCalenderRpComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CommonModule,
-    // ReactiveFormsModule,
     FlatpickrModule.forRoot(),
     CalendarModule.forRoot({
       provide: DateAdapter,
       useFactory: adapterFactory,
     }),
-    // FullCalendarModule,
     NgxDonutChartModule,
-    NgbModalModule,
     FormsModule,
   ],
   providers: [],

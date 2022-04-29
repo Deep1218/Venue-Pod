@@ -79,7 +79,7 @@ import { TermsComponent } from "./views/terms/terms.component";
 import { FaqComponent } from "./views/faq/faq.component";
 
 FullCalendarModule.registerPlugins([
-  // register FullCalendar plugins
+  // register FullCalendar plugins need to remove
   dayGridPlugin,
   interactionPlugin,
 ]);

@@ -17,11 +17,14 @@ import { ForgotPasswordComponent } from "./views/auth/forgot-password/forgot-pas
 // auth views
 import { LoginComponent } from "./views/auth/login/login.component";
 import { RegisterComponent } from "./views/auth/register/register.component";
+import { WebsiteSettingsComponent } from "./views/admin/website-settings/website-settings.component";
 
 // no layouts views
 import { IndexComponent } from "./views/index/index.component";
 // import { LandingComponent } from "./views/landing/landing.component";
 import { ProfileComponent } from "./views/profile/profile.component";
+import { SubscriptionReportComponent } from "./views/admin/subscription-report/subscription-report.component";
+import { NotificationComponent } from "./views/admin/notification/notification.component";
 
 import { ChatboxComponent } from "./views/chatbox/chatbox.component";
 
@@ -45,7 +48,10 @@ const routes: Routes = [
       { path: "settings", component: SettingsComponent },
       { path: "tables", component: TablesComponent },
       { path: "user-table", component: UserTableComponent },
+      { path: "website-settings", component: WebsiteSettingsComponent },
+      { path: "subscription-report", component: SubscriptionReportComponent },
       { path: "active-locations", component: ActiveLocationsComponent},
+      { path: "notification", component: NotificationComponent},
       { path: "maps", component: MapsComponent },
       { path: "", redirectTo: "dashboard", pathMatch: "full" },
     ],

@@ -47,19 +47,29 @@ import { PagesDropdownComponent } from "./components/dropdowns/pages-dropdown/pa
 import { NotificationDropdownComponent } from "./components/dropdowns/notification-dropdown/notification-dropdown.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user-dropdown.component";
+
 import { CardEmptyComponent } from "./components/cards/card-empty/card-empty.component";
 import { UserTableComponent } from "./views/admin/user-table/user-table.component";
 import { ForgotPasswordComponent } from "./views/auth/forgot-password/forgot-password.component";
 import { ActiveLocationsComponent } from "./views/admin/active-locations/active-locations.component";
 import { ChatboxComponent } from "./views/chatbox/chatbox.component";
+import { CardEmptyComponent } from "./components/cards/card-empty/card-empty.component";
+import { UserTableComponent } from "./views/admin/user-table/user-table.component";
+import { ForgotPasswordComponent } from "./views/auth/forgot-password/forgot-password.component";
+import { ActiveLocationsComponent } from "./views/admin/active-locations/active-locations.component";
+
+import { WebsiteSettingsComponent } from "./views/admin/website-settings/website-settings.component";
+import { SubscriptionReportComponent } from "./views/admin/subscription-report/subscription-report.component";
+import { NotificationComponent } from "./views/admin/notification/notification.component";
+import { NgMultiSelectDropDownModule } from "ng-multiselect-dropdown";
+
+import { ChatboxComponent } from "./views/chatbox/chatbox.component";
+
 import { VenueItemComponent } from "./views/venue-item/venue-item.component";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import { NgxDonutChartModule } from "ngx-doughnut-chart";
-import {
-  FullCalendarModule,
-  FullCalendarComponent,
-} from "@fullcalendar/angular";
+import { FullCalendarModule } from "@fullcalendar/angular";
 import { BookedVenuesComponent } from "./views/booked-venues/booked-venues.component";
 import { OwnerDashboardComponent } from "./views/owner-dashboard/owner-dashboard.component";
 import { CardCalenderComponent } from "./components/cards/card-calender/card-calender.component";
@@ -113,6 +123,9 @@ FullCalendarModule.registerPlugins([
     UserTableComponent,
     ForgotPasswordComponent,
     ActiveLocationsComponent,
+    WebsiteSettingsComponent,
+    SubscriptionReportComponent,
+    NotificationComponent,
     ChatboxComponent,
     VenueItemComponent,
     BookedVenuesComponent,
@@ -129,6 +142,7 @@ FullCalendarModule.registerPlugins([
     FormsModule,
     FullCalendarModule,
     NgxDonutChartModule,
+    NgMultiSelectDropDownModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

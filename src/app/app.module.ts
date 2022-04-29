@@ -2,7 +2,15 @@ import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 
+// chart imports
+import { NgxDonutChartModule } from "ngx-doughnut-chart";
+
+// calendar
+import { CalendarModule, DateAdapter } from "angular-calendar";
+import { adapterFactory } from "angular-calendar/date-adapters/date-fns";
 import { AppRoutingModule } from "./app-routing.module";
+import { FlatpickrModule } from "angularx-flatpickr";
+
 import { AppComponent } from "./app.component";
 
 // layouts
@@ -139,6 +147,13 @@ FullCalendarModule.registerPlugins([
   imports: [
     BrowserModule,
     AppRoutingModule,
+    CommonModule,
+    FlatpickrModule.forRoot(),
+    CalendarModule.forRoot({
+      provide: DateAdapter,
+      useFactory: adapterFactory,
+    }),
+    NgxDonutChartModule,
     FormsModule,
     FullCalendarModule,
     NgxDonutChartModule,

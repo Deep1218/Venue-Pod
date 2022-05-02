@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { NgxDonutChartModule,NgxDonutChartComponent,NgxDonutChartService } from 'ngx-doughnut-chart';
+// import { NgxDonutChartModule,NgxDonutChartComponent,NgxDonutChartService } from 'ngx-doughnut-chart';
 @Component({
   selector: 'app-card-donutchart',
   templateUrl: './card-donutchart.component.html',

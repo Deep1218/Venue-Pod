@@ -44,27 +44,25 @@ import { MapExampleComponent } from "./components/maps/map-example/map-example.c
 import { IndexDropdownComponent } from "./components/dropdowns/index-dropdown/index-dropdown.component";
 import { TableDropdownComponent } from "./components/dropdowns/table-dropdown/table-dropdown.component";
 import { PagesDropdownComponent } from "./components/dropdowns/pages-dropdown/pages-dropdown.component";
-import { NotificationDropdownComponent } from "./components/dropdowns/notification-dropdown/notification-dropdown.component";
+import { NotificationDropdownComponent } from "./components/dropdowns/notification-dropdown/notification-dropdown.component";h
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user-dropdown.component";
 import { CardEmptyComponent } from './components/cards/card-empty/card-empty.component';
 import { UserTableComponent } from './views/admin/user-table/user-table.component';
 import { ForgotPasswordComponent } from './views/auth/forgot-password/forgot-password.component';
 import { ActiveLocationsComponent } from './views/admin/active-locations/active-locations.component';
-<<<<<<< HEAD
 import { WebsiteSettingsComponent } from './views/admin/website-settings/website-settings.component';
-import { FormsModule } from "@angular/forms";
-import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+
+// import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { SubscriptionReportComponent } from './views/admin/subscription-report/subscription-report.component';
 import { NotificationComponent } from './views/admin/notification/notification.component';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
-=======
 import { ChatboxComponent } from './views/chatbox/chatbox.component';
 import { VenueItemComponent } from "./views/venue-item/venue-item.component";
-import dayGridPlugin from '@fullcalendar/daygrid';
-import interactionPlugin from '@fullcalendar/interaction';
-import { NgxDonutChartModule } from "ngx-doughnut-chart";
-import { FullCalendarModule, FullCalendarComponent } from '@fullcalendar/angular';
+// import dayGridPlugin from '@fullcalendar/daygrid';
+// import interactionPlugin from '@fullcalendar/interaction';
+// import { NgxDonutChartModule } from "ngx-doughnut-chart";
+// import { FullCalendarModule, FullCalendarComponent } from '@fullcalendar/angular';
 import { BookedVenuesComponent } from './views/booked-venues/booked-venues.component';
 import { OwnerDashboardComponent } from './views/owner-dashboard/owner-dashboard.component';
 import { CardCalenderComponent } from './components/cards/card-calender/card-calender.component';
@@ -72,12 +70,6 @@ import { CardDonutchartComponent } from './components/cards/card-donutchart/card
 import { PrivacyPolicyComponent } from './views/privacy-policy/privacy-policy.component';
 import { TermsComponent } from './views/terms/terms.component';
 import { FaqComponent } from './views/faq/faq.component';
-
-FullCalendarModule.registerPlugins([ // register FullCalendar plugins
-  dayGridPlugin,
-  interactionPlugin
-]);
->>>>>>> f4b8cb5a23c9faae17968c68907b972847a532ad
 
 @NgModule({
   declarations: [
@@ -118,15 +110,12 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     UserTableComponent,
     ForgotPasswordComponent,
     ActiveLocationsComponent,
-<<<<<<< HEAD
     WebsiteSettingsComponent,
     SubscriptionReportComponent,
     NotificationComponent,
-=======
     ChatboxComponent,
     VenueItemComponent,
     BookedVenuesComponent,
->>>>>>> f4b8cb5a23c9faae17968c68907b972847a532ad
 
     OwnerDashboardComponent,
 
@@ -145,19 +134,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    FullCalendarModule,
-    NgxDonutChartModule
-  ],
-<<<<<<< HEAD
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    CKEditorModule,
-    FormsModule,
     NgMultiSelectDropDownModule
   ],
-=======
->>>>>>> f4b8cb5a23c9faae17968c68907b972847a532ad
   providers: [],
   bootstrap: [AppComponent],
 })
